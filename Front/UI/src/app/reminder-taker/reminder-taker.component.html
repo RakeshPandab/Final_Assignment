@@ -1,0 +1,31 @@
+<!-- Label to display any error messages -->
+<label class="errorMessage">{{ errMessage }}</label>
+
+<!-- Expansion panel to add new notes -->
+<div class="reminder-container">
+    <mat-expansion-panel class="reminder-expansion-panel">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                ReminderDetails
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="reminder-form">
+            <mat-form-field>
+                    <span style="color:red;padding-left: 74px">  *  </span><input matInput placeholder="Reminder Id" name="Id" [(ngModel)]="rem.reminderId">
+            </mat-form-field>
+
+            <mat-form-field>
+                    <span style="color:red;padding-left: 101px">  *  </span><input matInput placeholder="Reminder Name" name="reminderName" [(ngModel)]="rem.reminderName">
+            </mat-form-field>
+            <mat-form-field>
+              <!--  <textarea matInput placeholder="text" name="text" [(ngModel)]="note.text"></textarea> -->
+              <span style="color:red;padding-left: 133px">  *  </span><textarea matInput placeholder="Reminder Description" name="desc" [(ngModel)]="rem.reminderDescription"></textarea>
+            </mat-form-field>
+
+        </div>
+        <button mat-button mat-raised-button color="primary" (click)="addReminder()">Add Reminder</button>
+        <button mat-button mat-raised-button color="warning" >Reset</button>
+    </mat-expansion-panel>
+</div>
+

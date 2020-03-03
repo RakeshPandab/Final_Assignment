@@ -1,0 +1,18 @@
+.category-card{
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 2%;
+    /* display:flex; */
+    
+    
+}
+
+.category-container
+{
+    display: -webkit-inline-box;
+    margin-left: 15%;
+    margin-top: 2%;
+    /* flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh; */
+}

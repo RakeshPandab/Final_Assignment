@@ -1,0 +1,26 @@
+.reminder-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.reminder-expansion-panel
+{
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.reminder-form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.errorMessage
+{
+    color: red;
+    padding-left: 194px;
+
+}

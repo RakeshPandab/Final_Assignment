@@ -1,0 +1,35 @@
+.reg-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-left: 30px;
+    width: 70vw;
+  }
+
+  .reg-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+  .box{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 12px;
+    width: 50%;
+    margin-left: 30%
+  }
+  .mat-raised-button.mat-primary {
+    background-color: primary;
+}
+h4{
+  color: brown;
+}
+
+h2{
+  text-align: center;
+  color: red;
+}

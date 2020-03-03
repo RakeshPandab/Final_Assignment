@@ -1,0 +1,44 @@
+#spring:
+#  data:
+#   mongodb:
+#      authentication-database: dbAdmin
+#      username: ${MONGO_USERNAME}
+#      password: ${MONGO_PASSWORD}
+ #     database: ${MONGO_DATABASE}
+#      port: ${MONGO_PORT}
+ #     host: ${MONGO_HOST}
+ # application:
+ #   name: user-service
+
+#spring.data.mongodb.uri: mongodb://127.0.0.1:27017/test
+
+#server:
+#  port: 8080
+spring:
+  datasource:
+    #driverClassName: com.mysql.jdbc.Driver
+   # url: jdbc:mysql://${MYSQL_HOST}:3306/${MYSQL_DATABASE}
+    #username: ${MYSQL_USER}
+    #password: ${MYSQL_PASSWORD}
+  
+#spring:
+#  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Integration
+    username: root
+    password: root
+  
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    show-sql: true
+    
+spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+server:
+  port: 8087
+
+
+
+
